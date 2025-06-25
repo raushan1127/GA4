@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-6 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold rounded-lg p-2">Our Amazing Products</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="hover:text-blue-200 transition duration-300">Home</a></li>
+                    <li><a href="#products" class="hover:text-blue-200 transition duration-300">Products</a></li>
+                    <li><a href="#contact" class="hover:text-blue-200 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content - Product Showcase -->
+    <main id="products" class="flex-grow container mx-auto p-8 py-16">
+        <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-12">Discover Our Collection</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <!-- Product Card 1 -->
+            <div class="bg-white rounded-xl shadow-2xl p-8 flex flex-col items-center transform transition duration-500 hover:scale-105 hover:shadow-3xl">
+                <img src="https://placehold.co/400x300/e0f2fe/0369a1?text=Product+A" alt="Product A" class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                <h3 class="text-3xl font-bold text-gray-900 mb-3">Premium Gadget Pro</h3>
+                <p class="text-gray-600 text-center mb-6 leading-relaxed">
+                    Experience the future with our cutting-edge Premium Gadget Pro. Designed for peak performance and unparalleled user experience.
+                </p>
+                <div class="text-4xl font-extrabold text-blue-700 mb-8">$299.99</div>
+                <a href="./thank_you.html" class="bg-gradient-to-r from-green-500 to-teal-500 text-white font-bold py-4 px-10 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out text-xl">
+                    Buy Now
+                </a>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="bg-white rounded-xl shadow-2xl p-8 flex flex-col items-center transform transition duration-500 hover:scale-105 hover:shadow-3xl">
+                <img src="https://placehold.co/400x300/fee2e2/dc2626?text=Product+B" alt="Product B" class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                <h3 class="text-3xl font-bold text-gray-900 mb-3">Essential Smart Device</h3>
+                <p class="text-gray-600 text-center mb-6 leading-relaxed">
+                    Simplify your life with the Essential Smart Device. Compact, efficient, and perfectly integrated for your daily needs.
+                </p>
+                <div class="text-4xl font-extrabold text-red-700 mb-8">$149.99</div>
+                <a href="./thank_you.html" class="bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold py-4 px-10 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out text-xl">
+                    Buy Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Call to action for the Thank You page -->
+        <div class="mt-20 text-center">
+            <p class="text-gray-700 text-xl mb-6">
+                Thank you for checking out our products!
+            </p>
+            <a href="./thank_you.html" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-md transition duration-300 ease-in-out">
+                Visit Thank You Page
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white p-6 mt-12">
+        <div class="container mx-auto text-center text-gray-400">
+            &copy; 2025 Our Company. All rights reserved. | Contact: info@example.com
+        </div>
+    </footer>
+
+</body>
+</html>
